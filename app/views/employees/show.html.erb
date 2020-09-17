@@ -1,0 +1,11 @@
+<h1>Employee</h1>
+
+<h2><%= "#{@employee.first_name} #{@employee.last_name}"%></h2>
+
+<ul>
+<%  @employee.attributes.each do |k,v| %>
+<li>
+<%= "#{k}: #{v}"%>
+</li>
+<% end %>
+</ul>
